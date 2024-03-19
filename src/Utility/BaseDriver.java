@@ -24,6 +24,7 @@ public class BaseDriver {
     }
     @AfterClass
     public static void tearDown() {
+
         Tools.wait(3);
         driver.quit();
     }
