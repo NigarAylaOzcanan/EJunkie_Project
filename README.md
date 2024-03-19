@@ -15,13 +15,13 @@ This user story focuses on the process of adding ebooks to the basket on the E-J
 **US 302 Demo Site Purchase with Debit Card "Faulty Payment" :**
 This user story revolves around testing the payment process using a debit card. It ensures that error messages are displayed if essential information, such as email address and other payment details, are left blank, thus verifying the security of the payment process.
 
-** US 303 Control of Unsuccessful Payment with Debit/Credit Card : **
+**US 303 Control of Unsuccessful Payment with Debit/Credit Card :**
 This user story aims to validate the payment process with both debit and credit cards. It specifically checks that the system does not display an error message indicating an invalid card number when filling out the required fields correctly.
 
-** US 304 Payment and Confirmation by Debit/Credit Card : **
+**US 304 Payment and Confirmation by Debit/Credit Card :**
  Here, the focus is on completing the payment process using valid card information and ensuring that a success message is displayed upon the completion of the transaction.
 
-** US 305 Payment Process, Approval, and Download : **
+**US 305 Payment Process, Approval, and Download :**
  This user story ensures that after a successful payment process, customers can download the purchased ebook immediately. It emphasizes the importance of a fast and seamless payment and download experience.
 
 **US 306 Communication Message Sending Process :**
