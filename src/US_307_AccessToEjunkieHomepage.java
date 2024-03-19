@@ -1,2 +1,2 @@
-public class US_307_AccessToEjunkieHompage {
+public class US_307_AccessToEjunkieHomepage {
 }

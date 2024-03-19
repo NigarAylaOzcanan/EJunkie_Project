@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class US_305_PaymnetApprovalAndDownload {
+public class US_305_PaymnetApprovalAndDownload {
 }
