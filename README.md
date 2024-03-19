@@ -1,13 +1,13 @@
-# E-Junkie Demo Site Automated Testing
+#E-Junkie Website Testing Project
 
-### Project Overview
+###Project Overview
 
 This project aims to automate the testing of the E-Junkie demo site using Selenium WebDriver, TestNG, and Java. The tests cover various user stories to ensure the functionality and reliability of the demo site. 
 The website under test is [E-Junkie](https://shopdemo.e-junkie.com/).
 
 
 
-## User Stories Covered
+##User Stories Covered
 
 **US 301 Adding Ebook to Basket with Promotional Code :**
 This user story focuses on the process of adding ebooks to the basket on the E-Junkie demo site. It also includes the functionality to apply promotional codes during checkout, with a validation check to ensure that invalid codes are appropriately handled.
