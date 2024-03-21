@@ -47,14 +47,13 @@ public class BaseDriver {
         logger.info("Driver Closed");
     }
 
-
     @BeforeMethod
-    public void BeforeMetod(ITestResult result){
+    public void BeforeMethod(ITestResult result){
         logger.info("Test Method Started: " + result.getName());
     }
 
     @AfterMethod
-    public void AfterMetod(ITestResult result){
-        logger.info( "The Method finished: " + result.getName() + " \n The Method result : " + (result.getStatus() == 1? "Passed" : "Failed"));
+    public void AfterMethod(ITestResult result){
+        logger.info( "The Method finished: " + result.getName() + " The Method result : " + (result.getStatus() == 1? "Passed" : "Failed"));
     }
 }
