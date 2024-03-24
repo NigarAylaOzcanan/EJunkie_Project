@@ -8,10 +8,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+
 import java.time.Duration;
 
 public class BaseDriver {
-    public static Logger logger= LogManager.getLogger();
+    public static Logger logger = LogManager.getLogger();
     public static WebDriver driver;
     public static WebDriverWait wait;
     public static Elements elements;
@@ -25,18 +26,18 @@ public class BaseDriver {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        elements=new Elements();
-        actions=new Actions(driver);
+        elements = new Elements();
+        actions = new Actions(driver);
 
         Tools.wait(2);
         NavigateToWebsite();
     }
-    @Test
-    public void NavigateToWebsite(){
-        System.out.println("Test Started");
-        logger.info("Log is started");
+
+    public void NavigateToWebsite() {
+
+        logger.info("Navigation of the website started.");
         driver.get("https://shopdemo.e-junkie.com/");
-        System.out.println("Test finished");
+        logger.info("Navigated to the website.");
 
     }
 
@@ -48,12 +49,12 @@ public class BaseDriver {
     }
 
     @BeforeMethod
-    public void BeforeMethod(ITestResult result){
-        logger.info("Test Method Started: " + result.getName());
+    public void BeforeMethod() {
+        logger.info("Method Started");
     }
 
     @AfterMethod
-    public void AfterMethod(ITestResult result){
-        logger.info( "The Method finished: " + result.getName() + " The Method result : " + (result.getStatus() == 1? "Passed" : "Failed"));
+    public void AfterMethod(ITestResult result) {
+        logger.info( result.getName() + " Method finished " + ", The result : " + (result.getStatus() == 1 ? " Passed " : " Failed "));
     }
 }
