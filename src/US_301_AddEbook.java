@@ -32,6 +32,6 @@ public class US_301_AddEbook extends BaseDriver {
 
         wait.until(ExpectedConditions.visibilityOf(elements.errorText));
         Assert.assertTrue(elements.errorText.isDisplayed(), "No warning message is present! ");
-        System.out.println("Result: " + elements.errorText.getText());
+        logger.info("Error message: "+ elements.errorText.getText());
     }
 }
