@@ -12,7 +12,7 @@ import org.testng.annotations.*;
 import java.time.Duration;
 
 public class BaseDriver {
-    public static Logger logger = LogManager.getLogger();
+    public static Logger logger;
     public static WebDriver driver;
     public static WebDriverWait wait;
     public static Elements elements;
@@ -28,7 +28,7 @@ public class BaseDriver {
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         elements = new Elements();
         actions = new Actions(driver);
-
+        logger = LogManager.getLogger();
         Tools.wait(2);
         NavigateToWebsite();
     }
@@ -55,6 +55,6 @@ public class BaseDriver {
 
     @AfterMethod
     public void AfterMethod(ITestResult result) {
-        logger.info( result.getName() + " Method finished " + ", The result : " + (result.getStatus() == 1 ? " Passed " : " Failed "));
+        logger.info( result.getName() + " Method finished " + ", The result : " + (result.getStatus() == 1 ? " --->  Passed " : " --->  Failed "));
     }
 }
