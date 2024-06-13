@@ -20,6 +20,7 @@ public class US_301_AddEbook extends BaseDriver {
       // wait.until(ExpectedConditions.elementToBeClickable(elements.addPromoCodeButton)).click();
       // wait.until(ExpectedConditions.elementToBeClickable(elements.promoCodeInput)).sendKeys("23456");
       // elements.applyButton.click();
+        //
 
         wait.until(ExpectedConditions.elementToBeClickable(elements.addPromoCodeButton));
         actions.moveToElement(elements.addPromoCodeButton).click().build().perform();
